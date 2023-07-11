@@ -6,13 +6,12 @@ const Joi = require('joi');
 const {
   processMappers,
 } = require('../../../sub-systems/Microservice-1/Process-Mappers/processMappers');
-
+const logger = require('../../../shared/src/configurations/logger.configurations');
 // API specific Rate-limiting Middleware
 app.post(
   '/myEndPoint',
   myEndPointMiddlewares.expressRateLimiterMiddleware,
   async (req, res, next) => {
-    debugger;
     try {
       const schema = Joi.object({
         name: Joi.string().valid('Anirudh', 'Nayak').default(null),
@@ -25,13 +24,22 @@ app.post(
       });
       const validationResult = schema.validate(req.body);
       if (validationResult.error) {
+        logger.warn('This is a warning message.');
+        logger.error('This is an error message.');
+
         res.sendStatus(400);
       } else {
         const response = await processMappers.process1(validationResult.value);
-        res.sendStatus(200);
+        
+        logger.info("🚀 ~ file: microserviceRouters.js:31 ~ response:", response);
+        res.json({
+          response: response,
+        });
       }
     } catch (error) {
-      res.sendStatus(400);
+      logger.error('This is an error message.');
+
+      res.status(400).json({ error: error });
     }
   }
 );
