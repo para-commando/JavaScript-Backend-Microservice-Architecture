@@ -7,7 +7,7 @@
     "startDev": "pm2 start ecosystem.config.js",
     "start": "node ./API-Gateway/src/Microservice-Routers/microserviceRouters.js",
     "kill": "pm2 kill",
-    "monitor" : "pm2 monitor",
+    "monitor": "pm2 monitor",
     "displayLogs": "pm2 logs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
