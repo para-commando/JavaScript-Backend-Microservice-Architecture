@@ -199,4 +199,4 @@ Each service exposes its own set of APIs.
 
 ## License
 
-    This project is licensed under the MIT License. See the LICENSE file for details.
+    This project is licensed under the MIT License.
