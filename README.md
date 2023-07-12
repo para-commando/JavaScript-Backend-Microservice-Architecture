@@ -66,7 +66,6 @@ The API Gateway service includes multiple endpoints that interact with various m
 
 Feel free to explore the code in `microserviceRouters.js` for more details on the implementation of each endpoint and its associated middleware.
 
-
 ## Features
 
 - **Microservices**: The architecture is based on microservices, where each service represents a specific business functionality or feature.
@@ -76,32 +75,29 @@ Feel free to explore the code in `microserviceRouters.js` for more details on th
 - **Error Handling**: Error handling mechanisms are implemented to provide meaningful error messages and handle exceptions gracefully.
 - **Authentication and Authorization**: Services implement authentication and authorization mechanisms to ensure secure access to resources.
 
-
 ## Getting Started
 
 To get started with the project, follow these steps:
 
 1. Clone the repository:
-
-   ```shell
-   git clone https://github.com/anirudh-nayak-172k/Backend-Microservice-Architecture.git
-   ```
+```  
+   git clone https://github.com/anirudh-nayak-172k/Backend-Microservice -Architecture.git
+```  
 
 2 . Navigate to the Directory and install the dependencies:
-
-    ```shell
+```
     cd Backend-Microservice-Architecture
     npm install
-    ```
+```
 
 3 . Run the start script
 
-    ```shell
+```    
     npm start
-    ```
-
+   
+```
 4 . Access the APIs:
-    Each service exposes its own set of APIs.
+Each service exposes its own set of APIs.
 
 ## Directory Structure
 
@@ -153,33 +149,54 @@ To get started with the project, follow these steps:
         ├── package.json
         ├── package-lock.json
 
-
 ## Scripts
+
     npm startDev: Starts the services using PM2 in development mode.
+    
     npm start: Starts the API Gateway service.
+    
     npm kill: Stops all running PM2 processes.
+    
     npm monitor: Monitors the PM2 processes.
+    
     npm displayLogs: Displays the logs from PM2 processes.
+    
     npm test: Runs the test scripts.
 
-
 ## Dependencies
+
     Express: Fast, unopinionated, minimalist web framework for Node.js.
+    
     Body Parser: Node.js body parsing middleware.
+    
     Bunyan: Logging library for Node.js.
+    
     Bunyan Format: Human-readable bunyan log formatter.
+    
     DDoS: DDoS protection middleware for Express.js.
+    
     Dotenv: Loads environment variables from a .env file.
+    
     Helmet: Secure your Express apps by setting various HTTP headers.
-    Joi: Object schema validation for Node.js.
+    
+    Joi: Object schema validation for Node.js. 
+    
     JSONWebToken: JSON Web Token implementation for Node.js.
+    
     Morgan: HTTP request logger middleware for Node.js.
-    Nodemon: Automatically restarts the server on file changes during development.
+    
+    Nodemon: Automatically restarts the server on file changes during   development.
+    
     PM2: Production process manager for Node.js applications.
+    
     Express Rate Limit: Rate limiting middleware for Express.js.
+    
     Redis: In-memory data structure store used as a database and cache.
+    
     Rate Limit Redis: Redis-based store for express-rate-limit middleware.
+    
     Response Time: Express.js middleware to record response times.
 
 ## License
+
     This project is licensed under the MIT License. See the LICENSE file for details.
