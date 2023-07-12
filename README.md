@@ -90,15 +90,27 @@ To get started with the project, follow these steps:
     npm install
 ```
 
-3 . Run the start script
+3 . Run the startDev script to start the application
 
 ```    
-    npm start
+    npm run startDev
    
 ```
 4 . Access the APIs:
 Each service exposes its own set of APIs.
 
+5. To see the Logs:
+
+```    
+    npm run displayLogs
+   
+```
+ 6. To stop the application entirely,
+
+```    
+    npm run kill
+   
+```
 ## Directory Structure
 
     server
