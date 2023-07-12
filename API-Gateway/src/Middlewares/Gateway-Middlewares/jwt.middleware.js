@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 module.exports.authenticateJsonWebToken = (req, res, next) => {
-    const token = req.headers['Authorization'];
+  const token = req.header('Authorization').split(' ')[1];
     if (!token) {
       return res.status(401).send('Unauthorized');
     }

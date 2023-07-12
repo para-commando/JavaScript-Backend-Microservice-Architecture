@@ -18,7 +18,7 @@ app.use(ddosMiddleware.express, (req, res, next) => {
 });
 
 app.use(morganMiddleware);
-// app.use(authenticateJsonWebToken);
+app.use(authenticateJsonWebToken);
 app.use(helmetMiddleware, (req, res, next) => {
   // calling next middleware in the queue
   next();
