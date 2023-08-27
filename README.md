@@ -1,4 +1,4 @@
-# Backend Microservice Architecture
+# JavaScript-Backend-Microservice-Architecture
 
 This repository demonstrates a sample backend microservice architecture using Node.js and Express.js.
 ![Example](./shared/src/assets/microserviceVisual.jpg)
@@ -81,12 +81,12 @@ To get started with the project, follow these steps:
 
 1. Clone the repository:
 ```  
-   git clone https://github.com/anirudh-nayak-172k/Backend-Microservice -Architecture.git
+   git clone https://github.com/anirudh-nayak-172k/JavaScript-Backend-Microservice-Architecture.git
 ```  
 
 2 . Navigate to the Directory and install the dependencies:
 ```
-    cd Backend-Microservice-Architecture
+    cd JavaScript-Backend-Microservice-Architecture
     npm install
 ```
 
@@ -112,7 +112,8 @@ Each service exposes its own set of APIs.
    
 ```
 ## Directory Structure
-
+    JavaScript-Backend-Microservice-Architecture
+    |
     server
         ├── API-Gateway
         │   └── src
