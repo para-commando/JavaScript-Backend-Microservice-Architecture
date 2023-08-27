@@ -2,6 +2,9 @@
 
 This repository demonstrates a sample backend microservice architecture using Node.js and Express.js.
 
+![Example](./TypeScript/server/shared/src/assets/microserviceArchVisual.jpeg)
+
+
 ## Table of Contents
 
 - [Introduction](#introduction)
