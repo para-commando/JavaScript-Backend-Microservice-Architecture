@@ -1,7 +1,9 @@
 # JavaScript-Backend-Microservice-Architecture
 
 This repository demonstrates a sample backend microservice architecture using Node.js and Express.js.
-![Example](./shared/src/assets/microserviceVisual.jpg)
+
+![microserviceArchVisual](https://github.com/anirudh-nayak-172k/JavaScript-Backend-Microservice-Architecture/assets/123434846/7d350083-cb07-44b5-963a-d2fb594828dc)
+
 ## Table of Contents
 
 - [Introduction](#introduction)
